@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2024-07-01T09:40:16.110Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="rVYRPRRRC1XdQYkzBR_i" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-01T10:43:30.706Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="FuA_JVFqPDnLNaFh05yF" version="24.6.4" type="github">
   <diagram name="Page-1" id="mTxW90itcaq0r1PfPk89">
-    <mxGraphModel dx="1009" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1859" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="rR1IcOJ0TdtoFGJN7YsJ-1" value="Game Manager" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="80" y="110" width="120" height="60" as="geometry" />
+          <mxGeometry x="-70" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rR1IcOJ0TdtoFGJN7YsJ-4" value="&lt;div&gt;- Camera Object&lt;/div&gt;&lt;div&gt;- List of Scriptable Objects for scene info (x,y bounds/enemy loading/etc).&lt;/div&gt;&lt;div&gt;- List of all Unit Scriptable Objects.&lt;/div&gt;&lt;div&gt;- List of gates to different stages in current scene.&lt;/div&gt;&lt;div&gt;- List of enemies in current scene.&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Enum list for game states (set up, in combat, roaming, safe zone)&lt;/div&gt;&lt;div&gt;- Scriptable Object of checkpoints/save file&lt;/div&gt;&lt;div&gt;---------------------------------------------&lt;/div&gt;&lt;div&gt;- void FakeUpdate() method: includes LoadStage(); StateUpdate(); AudioChange(); CameraMove()&lt;/div&gt;&lt;div&gt;- void LoadStage() method: load scenes and spawn player at checkpoints&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;based on save file&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;, spawn enemies also adds them to list&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;based on scene&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- void CameraMove()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- gamestates StateUpdate() method: Change state depending on info from enemies list.&lt;/div&gt;&lt;div&gt;- void LoadNextStage() method: Loading scene when player interacts with gates.&lt;/div&gt;&lt;div&gt;- String AudioChange() method: Change music depending on game state.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry y="210" width="240" height="420" as="geometry" />
+          <mxGeometry x="-130" y="210" width="240" height="420" as="geometry" />
         </mxCell>
         <mxCell id="rR1IcOJ0TdtoFGJN7YsJ-5" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="rR1IcOJ0TdtoFGJN7YsJ-4" target="rR1IcOJ0TdtoFGJN7YsJ-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -52,13 +52,52 @@
         <mxCell id="hzWiF1sm6HmeUl0I48Hu-6" value="Unit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="340" y="460" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="hzWiF1sm6HmeUl0I48Hu-7" value="- UnitID&lt;div&gt;- Health&lt;/div&gt;&lt;div&gt;- Movement Speed&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-7" value="- UnitID&lt;div&gt;- Health&lt;/div&gt;&lt;div&gt;-----------------------&lt;/div&gt;&lt;div&gt;- takedamage()&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="340" y="570" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="hzWiF1sm6HmeUl0I48Hu-8" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="hzWiF1sm6HmeUl0I48Hu-7" target="hzWiF1sm6HmeUl0I48Hu-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="630" as="sourcePoint" />
             <mxPoint x="450" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-9" value="PlayerUnit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-10" value="s" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hzWiF1sm6HmeUl0I48Hu-6" target="hzWiF1sm6HmeUl0I48Hu-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="660" as="sourcePoint" />
+            <mxPoint x="450" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-13" value="EnemyUnit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hzWiF1sm6HmeUl0I48Hu-6" target="hzWiF1sm6HmeUl0I48Hu-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="650" as="sourcePoint" />
+            <mxPoint x="430" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-15" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-16" value="Player View" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-17" value="Input System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="hzWiF1sm6HmeUl0I48Hu-17" target="rR1IcOJ0TdtoFGJN7YsJ-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="530" as="sourcePoint" />
+            <mxPoint x="220" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hzWiF1sm6HmeUl0I48Hu-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="hzWiF1sm6HmeUl0I48Hu-16" target="rR1IcOJ0TdtoFGJN7YsJ-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="520" as="sourcePoint" />
+            <mxPoint x="240" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
