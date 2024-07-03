@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-03T08:34:56.507Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="nVvXtWNOQ9mEJWPDGGMf" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-03T08:40:54.598Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="MfAk_kyv2dYyw7JltETu" version="24.6.4" type="github">
   <diagram name="Page-1" id="mTxW90itcaq0r1PfPk89">
     <mxGraphModel dx="1330" dy="1670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rR1IcOJ0TdtoFGJN7YsJ-1" value="Game Manager" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="110" width="120" height="60" as="geometry" />
+          <mxGeometry x="120" y="90" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rR1IcOJ0TdtoFGJN7YsJ-4" value="&lt;div&gt;- Camera Object&lt;/div&gt;&lt;div&gt;- List of Scriptable Objects for scene info (x,y bounds/enemy loading/etc).&lt;/div&gt;&lt;div&gt;- List of all Unit Scriptable Objects.&lt;/div&gt;&lt;div&gt;- List of gates to different stages in current scene.&lt;/div&gt;&lt;div&gt;- List of enemies in current scene.&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Enum list for game states (set up, in combat, roaming, safe zone)&lt;/div&gt;&lt;div&gt;- Scriptable Object of checkpoints/save file&lt;/div&gt;&lt;div&gt;---------------------------------------------&lt;/div&gt;&lt;div&gt;- void FakeUpdate() method: includes LoadStage(); StateUpdate(); AudioChange(); CameraMove()&lt;/div&gt;&lt;div&gt;- void LoadStage() method: load scenes and spawn player at checkpoints&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;based on save file&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;, spawn enemies also adds them to list&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;based on scene&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- void CameraMove()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- gamestates StateUpdate() method: Change state depending on info from enemies list.&lt;/div&gt;&lt;div&gt;- void LoadNextStage() method: Loading scene when player interacts with gates.&lt;/div&gt;&lt;div&gt;- String AudioChange() method: Change music depending on game state.&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="-187" y="160" width="240" height="420" as="geometry" />
